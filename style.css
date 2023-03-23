@@ -1,0 +1,211 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ body {
+     font-family: "Poppins", sans-serif;
+     min-height: 100vh;
+     width: 100%;
+     background-color: whitesmoke;
+     display: flex;
+     flex-direction: column;
+ }
+
+ .content {
+     flex: 1 0 auto;
+     margin-top: 3rem;
+ }
+
+ .navbar {
+     background-color: #6370B3;
+     justify-content: flex-end;
+ }
+
+ .navbar-brand {
+     color: white;
+ }
+
+ .collapse .navbar-collapse {
+     color: white;
+ }
+
+ footer {
+     padding-top: 20px;
+     padding-bottom: 20px;
+     margin-top: 20px;
+     background-color: #6370B3;
+     text-align: center;
+     color: white;
+ }
+
+ .container h1 {
+     margin-top: 6rem;
+     color: #6370B3;
+ }
+
+ .form-select {
+     margin-top: 1rem;
+     width: 30%;
+     border: 3px solid #6370B3;
+ }
+
+ .image {
+     margin-right: 20px;
+ }
+
+ .col-lg-12 {
+     display: flex;
+ }
+
+ .divider:after,
+ .divider:before {
+     content: "";
+     flex: 1;
+     height: 1px;
+     background: #eee;
+ }
+
+ .h-custom {
+     height: calc(100% - 73px);
+ }
+
+ @media (max-width: 450px) {
+     .h-custom {
+         height: 100%;
+     }
+ }
+
+ h5 {
+     margin-top: 2rem;
+ }
+
+ .btn-secondary {
+     margin-right: 20px;
+     width: 120px;
+     height: 36px;
+ }
+
+ .show {
+     margin-left: 2rem;
+     margin-top: 18px;
+ }
+
+ .places {
+     margin-top: 1rem;
+     display: none;
+ }
+
+ .edits {
+     margin-top: 54px;
+     display: none;
+ }
+
+ h2,
+ h3 {
+     color: #6370B3;
+     margin-top: 4rem;
+ }
+
+ h4,
+ .welcome {
+     color: #6370B3;
+ }
+
+ h6 {
+     color: #cc0000;
+     margin-top: 1rem;
+ }
+
+ .google {
+     color: white;
+ }
+
+ .auth {
+     margin-top: 4rem;
+ }
+
+ .snackbar {
+     visibility: hidden;
+     min-width: 250px;
+     margin-left: -125px;
+     background-color: #333;
+     color: #fff;
+     text-align: center;
+     border-radius: 2px;
+     padding: 16px;
+     position: fixed;
+     z-index: 1;
+     left: 50%;
+     bottom: 30px;
+     font-size: 17px;
+ }
+
+ .error-message {
+     display: none;
+     font-size: 0.6rem;
+     color: red;
+ }
+
+ .snackbar.show {
+     visibility: visible;
+     -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+     animation: fadein 0.5s, fadeout 0.5s 2.5s;
+ }
+
+ @-webkit-keyframes fadein {
+     from {
+         bottom: 0;
+         opacity: 0;
+     }
+
+     to {
+         bottom: 30px;
+         opacity: 1;
+     }
+ }
+
+ @keyframes fadein {
+     from {
+         bottom: 0;
+         opacity: 0;
+     }
+
+     to {
+         bottom: 30px;
+         opacity: 1;
+     }
+ }
+
+ @-webkit-keyframes fadeout {
+     from {
+         bottom: 30px;
+         opacity: 1;
+     }
+
+     to {
+         bottom: 0;
+         opacity: 0;
+     }
+ }
+
+ @keyframes fadeout {
+     from {
+         bottom: 30px;
+         opacity: 1;
+     }
+
+     to {
+         bottom: 0;
+         opacity: 0;
+     }
+ }
+
+ .edit-death {
+     display: none
+ }
+
+ .add-death {
+     display: none
+ }
